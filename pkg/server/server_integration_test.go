@@ -1,4 +1,5 @@
 // +build integration
+
 package server
 
 import (
@@ -10,6 +11,7 @@ import (
 	"time"
 )
 
+// to run it type: go test -tags=integration ./...
 func TestTCPServerIntegration(t *testing.T) {
 	// creates a logger
 	log, err := CreateLogger("../../testdata/server_test.log", false)
